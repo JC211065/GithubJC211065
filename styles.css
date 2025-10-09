@@ -1,7 +1,7 @@
 :root {
   --background-color:rgb(202, 165, 2);
   --primary-color: solid 1px #000000;
-  --text-color:  #07960e;
+  --text-color:  #000000;
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: Verdana, 
   color: rgb(255, 255, 255);
   background-color: var(--background-color)
 }
@@ -34,12 +34,12 @@ nav a {
   border: solid 1px rgb(0, 75, 6);
   text-align: center;
   text-decoration: none;
-  color:  #07960e;
+  color:  #000000;
 }
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #07960e;
+  background-color: #050505;
 }
 
 main {
@@ -49,4 +49,8 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+.child{
+  border: solid 1px blue;
+  padding: 1rem;
 }
