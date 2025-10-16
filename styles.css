@@ -1,7 +1,7 @@
 :root {
-  --background-color:rgb(202, 165, 2);
+  --background-color: rgb(202, 165, 2);
   --primary-color: solid 1px #000000;
-  --text-color:  #000000;
+  --text-color: #000000;
 }
 
 * {
@@ -10,9 +10,9 @@
 
 body {
   margin: 0;
-  font-family: Verdana, 
+  font-family: Verdana, sans-serif;
   color: rgb(255, 255, 255);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
 nav {
@@ -34,7 +34,13 @@ nav a {
   border: solid 1px rgb(0, 75, 6);
   text-align: center;
   text-decoration: none;
-  color:  #000000;
+  color: #000000;
+}
+
+nav a:hover {
+  background-color: #444444;
+  color: white;
+  cursor: pointer;
 }
 
 nav a[aria-current='page'] {
@@ -50,7 +56,26 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-.child{
-  border: solid 1px blue;
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  gap: 1rem;
+}
+
+.child {
+  border: solid 2px blue;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #e0f7fa;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  flex: 1;
+  text-align: center;
+  border-radius: 5px;
 }
