@@ -1,13 +1,13 @@
 :root {
   --background-image: url(https://t4.ftcdn.net/jpg/16/75/23/73/360_F_1675237350_y9fjh7KTPAmurdd1FR3lYjEQNSnAJqR2.jpg);
-  --background-color: #1a1a1a; /* dark fallback background */
+  --background-color: #1a1a1a;
 
-  --color-purple: #8A2BE2;
-  --color-green: #39FF14;
-  --color-pink: #FF69B4;
-  --color-orange: #FFA500;
+  --color-purple: #8a2be2;
+  --color-green: #39ff14;
+  --color-pink: #ff69b4;
+  --color-orange: #ffa500;
 
-  --text-color: #FFFFFF;
+  --text-color: #ffffff;
 }
 
 * {
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover,
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   background-color: var(--color-pink);
   color: var(--background-color);
   border-color: var(--color-pink);
@@ -138,7 +138,7 @@ main {
   color: var(--background-color);
 }
 
-footer {
+.footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--color-orange);
   text-align: center;
@@ -146,4 +146,6 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   border-top: 2px solid var(--color-pink);
+  display: flex;
+  flex-direction: column;
 }
