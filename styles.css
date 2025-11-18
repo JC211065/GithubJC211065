@@ -149,3 +149,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0,5rem;
+  padding: 2rem;
+}
+.input {
+  width: 66%;
+}
