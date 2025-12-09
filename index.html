@@ -14,7 +14,27 @@
       <a href="./page3.html">About me</a>
     </nav>
 
-    <main>
+    <main id="main">
+      <label>Dark mode
+        <input type="checkbox" onchange="toggleDarkMode ()">
+      </label>
+      <script>
+        let darkMode = false;
+        function toggleDarkMode() {
+
+          console.log("Dark mode initially is " + darkMode);
+          if (darkMode == true) {
+            darkMode = false;
+          } else {
+            darkMode = true;
+            document.getElementById("main").style["backgroundColor"] = "#8ccddb"
+          }
+          console.log("Dark mode has been changed to " + darMode);
+        }
+s
+
+      </script>
+
       <header class="hero">
         <h1>JC Streetwear Clothes Designing</h1>
         <p>
