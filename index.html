@@ -11,6 +11,7 @@
     <nav>
       <a href="/" aria-current="page">Home</a>
       <a href="./page2.html">Womens</a>
+      <a href="./page4.html">Kids</a>
       <a href="./page3.html">About me</a>
     </nav>
 
@@ -25,6 +26,7 @@
           console.log("Dark mode initially is " + darkMode);
           if (darkMode == true) {
             darkMode = false;
+            document.getElementById("main").style["backgroundColor"] = "rgba(0, 0, 0, 0.6)"
           } else {
             darkMode = true;
             document.getElementById("main").style["backgroundColor"] = "#8ccddb"
