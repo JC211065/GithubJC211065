@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="/images/favicon.ico">
-    <title>Women</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/page2.html" aria-current="page">Womens</a>
-      <a href="/page4.html">Kids</a>
-      <a href="/page3.html">About me</a>
-    </nav>
-    <main>
-      <h1>
-        <header class="hero">
-          <h1>JC Streetwear Clothes Designing</h1>
-          <p>
-            Explore the latest trends in hoodies, pants, and shirts, for women
-             in which you can customize your clothes with any designs and
-            styles that you will love.
-          </p>
-      </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Women’s streetwear clothing including hoodies, pants, and shirts with customizable designs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women | JC Streetwear</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html" aria-current="page">Womens</a>
+    <a href="page4.html">Kids</a>
+    <a href="page3.html">About me</a>
+  </nav>
+
+  <main>
+    <main id="main">
+      <label>Bright Mode
+        <input type="checkbox" onchange="toggleDarkMode ()">
+      </label>
+      <script>
+        let darkMode = false;
+        function toggleDarkMode() {
+  
+          console.log("Dark mode initially is " + darkMode);
+          if (darkMode == true) {
+            darkMode = false;
+            document.getElementById("main").style["backgroundColor"] = "rgba(0, 0, 0, 0.6)"
+          } else {
+            darkMode = true;
+            document.getElementById("main").style["backgroundColor"] = "#8ccddb"
+          }
+          console.log("Dark mode has been changed to " + darkMode);
+  }
+  
+      </script>
+    <header class="hero">
+      <h1>JC Streetwear Clothes Designing</h1>
+      <p>
+        Explore the latest trends in hoodies, pants, and shirts for women
+        that you can customize with designs and styles you’ll love.
+      </p>
     </header>
 
     <section class="gallery">
       <article class="card">
-        <img
-          src="https://files.tapstitch.com/material/style/item_image/image-RP0006%20(4)-v1729246063.png?x-oss-process=style/hugepod-product-list-webp"
-          alt="Cool streetwear hoodie"
-        />
+        <img src="https://files.tapstitch.com/material/style/item_image/image-RP0006%20(4)-v1729246063.png?x-oss-process=style/hugepod-product-list-webp"
+             alt="Women's streetwear hoodie">
         <h2>Hoodies</h2>
         <p>Comfort meets style with our latest hoodies.</p>
-        <a
-          href="https://www.tapstitch.com/custom/rp0006-cropped-half-zip-hoodie?bsId=1316084454565068800&category1Slug=women-clothes&isDeliveryToUs=0"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://www.tapstitch.com/custom/rp0006-cropped-half-zip-hoodie?bsId=1316084454565068800&category1Slug=women-clothes&isDeliveryToUs=0"
+           target="_blank" rel="noopener">
           Shop Hoodies
         </a>
       </article>
 
       <article class="card">
-        <img
-          src="https://files.tapstitch.com/material/style/item_image/style/item_image/20250919/image-v1758261983-WK0003-F-(1).jpg?x-oss-process=style/hugepod-product-webp"
-          alt="Trendy streetwear pants"
-        />
+        <img src="https://files.tapstitch.com/material/style/item_image/style/item_image/20250919/image-v1758261983-WK0003-F-(1).jpg?x-oss-process=style/hugepod-product-webp"
+             alt="Women's streetwear pants">
         <h2>Pants</h2>
         <p>Perfect pants for your everyday look.</p>
-        <a
-          href="https://www.tapstitch.com/custom/wk0003-essential-drawstring-straight-leg-sweatpants?bsId=1417840029912510464&category1Slug=women-clothes&isDeliveryToUs=0"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://www.tapstitch.com/custom/wk0003-essential-drawstring-straight-leg-sweatpants?bsId=1417840029912510464&category1Slug=women-clothes&isDeliveryToUs=0"
+           target="_blank" rel="noopener">
           Shop Pants
         </a>
       </article>
 
       <article class="card">
-        <img
-          src="https://files.tapstitch.com/material/style/item_image/image-WT0029%20(4)-v1759126791.jpg?x-oss-process=style/hugepod-product-list-webp"
-          alt="Stylish streetwear shirts"
-        />
+        <img src="https://files.tapstitch.com/material/style/item_image/image-WT0029%20(4)-v1759126791.jpg?x-oss-process=style/hugepod-product-list-webp"
+             alt="Women's streetwear shirts">
         <h2>Shirts</h2>
         <p>Fresh shirts to complete your outfit.</p>
-        <a
-          href="https://www.tapstitch.com/custom/wt0029-contrast-stripes-bodycon-raglan-sleeve-t-shirt?bsId=1420768911548428288&category1Slug=women-clothes&isDeliveryToUs=0"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://www.tapstitch.com/custom/wt0029-contrast-stripes-bodycon-raglan-sleeve-t-shirt?bsId=1420768911548428288&category1Slug=women-clothes&isDeliveryToUs=0"
+           target="_blank" rel="noopener">
           Shop Shirts
         </a>
       </article>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>Contact us</p>
+    <div class="footerLinks">
+      <a href="mailto:josecoralrps@gmail.com">Email</a>
+    </div>
+  </footer>
 </body>
-<div class="footer">
-  contact us
-  <div class="footerLinks">
-    <a href="https://josecoralrps@gmail.com" target="_blank">Email</a>
-  </div>                                                                                                                                                                                   
-</div>
-</html>
-    </main>
-    <ul>
-      <a href= ></a>
-    </ul>
-  </body>
 </html>

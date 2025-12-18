@@ -1,105 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="/images/favicon.ico">
-    <title>Streetwear Clothes Designing</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./page2.html">Womens</a>
-        <a href="/" aria-current="page">kids</a>
-      <a href="./page3.html">About me</a>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Kids streetwear clothing including hoodies, pants, and shirts with customizable designs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids | JC Streetwear</title>
 
-    <main id="main">
-      <label>Dark mode
-        <input type="checkbox" onchange="toggleDarkMode ()">
-      </label>
-      <script>
-        let darkMode = false;
-        function toggleDarkMode() {
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 
-          console.log("Dark mode initially is " + darkMode);
-          if (darkMode == true) {
-            darkMode = false;
-          } else {
-            darkMode = true;
-            document.getElementById("main").style["backgroundColor"] = "#8ccddb"
-          }
-          console.log("Dark mode has been changed to " + darMode);
+
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Womens</a>
+    <a href="page4.html" aria-current="page">Kids</a>
+    <a href="page3.html">About Me</a>
+  </nav>
+
+  <main id="main">
+    <label>Bright Mode
+      <input type="checkbox" onchange="toggleDarkMode ()">
+    </label>
+    <script>
+      let darkMode = false;
+      function toggleDarkMode() {
+
+        console.log("Dark mode initially is " + darkMode);
+        if (darkMode == true) {
+          darkMode = false;
+          document.getElementById("main").style["backgroundColor"] = "rgba(0, 0, 0, 0.6)"
+        } else {
+          darkMode = true;
+          document.getElementById("main").style["backgroundColor"] = "#8ccddb"
         }
-s
+        console.log("Dark mode has been changed to " + darkMode);
+}
 
-      </script>
+    </script>
 
-      <header class="hero">
-        <h1>JC Streetwear Clothes Designing</h1>
-        <p>
-          Explore the latest trends in hoodies, pants, and shirts, for men
-           in which you can customize your clothes with any designs and
-          styles that you will love.
-        </p>
-      </header>
+    
+    <header class="hero">
+      <h1>JC Streetwear Clothes Designing</h1>
+      <p>
+        Explore fun and stylish hoodies, pants, and shirts for kids that
+        can be customized with designs and colors they’ll love.
+      </p>
+    </header>
 
-      <section class="gallery">
-        <article class="card">
-          <img
-            src="https://files.tapstitch.com/material/style/item_image/style/item_image/20251127/image-v1764227724-KW0002-(1)TT.jpg?x-oss-process=style/hugepod-product-webp"
-            alt="Cool streetwear hoodie"
-          />
-          <h2>Hoodies</h2>
-          <p>Comfort meets style with our latest hoodies.</p>
-          <a
-            href="https://www.tapstitch.com/collections/kids-clothes"
-            target="_blank"
-            rel="noopener"
-          >
-            Shop Hoodies
-          </a>
-        </article>
+    
+    <section class="gallery">
 
-        <article class="card">
-          <img
-            src="https://files.tapstitch.com/material/style/item_image/style/item_image/20251114/image-v1763085287-KK0004-M-(2).jpg?x-oss-process=style/hugepod-product-webp"
-            alt="Trendy streetwear pants"
-          />
-          <h2>Pants</h2>
-          <p>Perfect pants for your everyday look.</p>
-          <a
-            href="https://www.tapstitch.com/collections/kids-clothes"
-            target="_blank"
-            rel="noopener"
-          >
-            Shop Pants
-          </a>
-        </article>
+      <article class="card">
+        <img
+          src="https://files.tapstitch.com/material/style/item_image/style/item_image/20251127/image-v1764227724-KW0002-(1)TT.jpg?x-oss-process=style/hugepod-product-webp"
+          alt="Kids streetwear hoodie">
+        <h2>Hoodies</h2>
+        <p>Comfortable hoodies perfect for kids.</p>
+        <a href="https://www.tapstitch.com/collections/kids-clothes"
+           target="_blank" rel="noopener">
+          Shop Hoodies
+        </a>
+      </article>
 
-        <article class="card">
-          <img
-            src="https://files.tapstitch.com/material/style/item_image/image-R00355%20(9)-v1728872184.png?x-oss-process=style/hugepod-product-list-webp"
-            alt="Stylish streetwear shirts"
-          />
-          <h2>Shirts</h2>
-          <p>Fresh shirts to complete your outfit.</p>
-          <a
-            href="https://www.tapstitch.com/collections/kids-clothes"
-            target="_blank"
-            rel="noopener"
-          >
-            Shop Shirts
-          </a>
-        </article>
-      </section>
-    </main>
-  </body>
-  <div class="footer">
-    contact us
+      <article class="card">
+        <img
+          src="https://files.tapstitch.com/material/style/item_image/style/item_image/20251114/image-v1763085287-KK0004-M-(2).jpg?x-oss-process=style/hugepod-product-webp"
+          alt="Kids streetwear pants">
+        <h2>Pants</h2>
+        <p>Stylish and comfy pants for kids.</p>
+        <a href="https://www.tapstitch.com/collections/kids-clothes"
+           target="_blank" rel="noopener">
+          Shop Pants
+        </a>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://files.tapstitch.com/material/style/item_image/image-R00355%20(9)-v1728872184.png?x-oss-process=style/hugepod-product-list-webp"
+          alt="Kids streetwear shirts">
+        <h2>Shirts</h2>
+        <p>Fun shirts to complete any outfit.</p>
+        <a href="https://www.tapstitch.com/collections/kids-clothes"
+           target="_blank" rel="noopener">
+          Shop Shirts
+        </a>
+      </article>
+
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <p>Contact us</p>
     <div class="footerLinks">
-      <a href="https://josecoralrps@gmail.com" target="_blank">Email us</a>
-    </div>                                                                                                                                                                                   
-  </div>
+      <a href="mailto:josecoralrps@gmail.com">Email us</a>
+    </div>
+  </footer>
+
+</body>
 </html>
